@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>National Parks Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="An app that will find national parks in your state">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <main role="main">
+        <h1>Find National Parks Near You</h1>
+        
+        <form>
+          <label>State(s) you are searching in:</label> 
+          <input class="state_name" type="text" placeholder="i.e. NY, KS, WY " required>
+          <label>Number of results you want:</label>
+          <input class="result_number" type="number" name="quantity" min="0" value="10" max="25" required>
+          <input type="submit">
+        </form>
+
+        <container class="resultsContainer"></container>
+
+    </main>
+</body>
+
+
+</html>
